@@ -1,0 +1,17 @@
+<ion-view title="Stock Prices" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="stockPrices-form1" class="list">
+      <label class="item item-select" id="stockPrices-select1">
+        <span class="input-label">Select</span>
+        <select ng-model="mdl.stock">
+          <option value = "AAPL">Apple Computer – AAPL</option>
+          <option value = "GE">General Electric Company – GE</option>
+          <option value = "SBUX">Starbucks Corporation – SBUX</option>
+          <option value = "WBA">Walgreens Company – WBA</option>
+        </select>
+      </label>
+    </form>
+    <a ui-sref="result({stock:mdl.stock})" id="stockPrices-button1" class="button button-positive button-block" >See the result</a>
+    <h1>{{mdl.stock}}</h1>
+  </ion-content>
+</ion-view>
